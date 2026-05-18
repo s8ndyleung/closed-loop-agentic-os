@@ -4,9 +4,9 @@ A guide to building a personal agentic operating system that captures, recalls, 
 
 ## What Is This?
 
-Most people's experience with AI agents is open-loop. You prompt, you get a response, it's gone. Next session, you start over. The agent doesn't remember what you researched last week, what decisions were made, or what you already know. Nothing accumulates.
+Most people's experience with AI agents is open-loop. You prompt, you get a response, and it's gone. Next session, you start over because the agent doesn't remember what you researched last week, what decisions were made, or what you already know.
 
-This guide describes a different pattern. Instead of treating each session as a one-off, you build a system where every output feeds back into memory. Research gets filed. Decisions get logged. Deliverables get pressure-tested and the results inform the next pass. Over time, the system gets smarter because it's building on everything that came before. That's the "closed loop."
+This guide describes a different pattern. Instead of treating each session as a one-off, you build a system where every output feeds back into memory. Research gets filed into a wiki, decisions get logged alongside their rationale, and deliverables get pressure-tested so the results can inform the next pass. Over time, the system gets smarter because it's building on everything that came before, and that's what makes the loop "closed."
 
 The idea is inspired by Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern, where the LLM incrementally builds and maintains a persistent wiki rather than re-deriving knowledge from scratch on every query. This guide extends that concept into a full operating system: not just a wiki, but a complete stack with memory, reasoning pipelines, branded output, and self-maintenance.
 
@@ -25,8 +25,6 @@ This is for two kinds of people:
 **Business leaders** who want to design their own agentic system. You're not an engineer, but you're building strategy, running teams, and producing deliverables every day. You want AI that compounds your judgment over time, not just answers one-off questions. You want to own the system, not depend on someone else's SaaS tool.
 
 **Engineering leaders** who want to close the loop between their technical systems and business strategy. You can build the infrastructure, but you want a reference for how to structure the memory, the pipelines, and the output layer so the system actually produces decision-ready work, not just raw text.
-
-You don't need a CS degree for the first path. You don't need an MBA for the second. You need a clear mental model of what the system does and the willingness to build it with your AI agent as a partner.
 
 ## The Five Pillars
 
