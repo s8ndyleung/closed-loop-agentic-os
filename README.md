@@ -114,7 +114,7 @@ Not everything needs the full stack.
 | **Standard** | "Build a strategy for Y" | All five pillars | Branded deck or document |
 | **Investment-Grade** | "Build a business case" | All five pillars + multiple pipeline stages | Full deliverable package with financial model |
 
-Start simple. Most days are Tier 1. The system scales when you need it.
+Start simple. Most days are Tier 1. The system scales when you need it. For a ready-to-use pipeline that implements the Standard and Investment-Grade tiers, see the [AI Strategic Analysis](https://github.com/s8ndyleung/ai-strategic-analysis) framework.
 
 ## Design Principles
 
@@ -163,6 +163,10 @@ The architecture is tool-agnostic. Pick what fits your workflow and budget.
 - A complete plug-and-play system
 
 This is a guide and reference architecture. The real value comes from building your own system on top of these patterns, tuned to your role, your domain, and your tools.
+
+## Related
+
+- [AI Strategic Analysis](https://github.com/s8ndyleung/ai-strategic-analysis) — a conductor pipeline for taking a business question from brief to branded deliverable, built on the patterns described here.
 
 ---
 
