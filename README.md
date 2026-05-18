@@ -1,10 +1,10 @@
 # Closed-Loop Agentic OS
 
-A guide to building a personal agentic operating system that captures, recalls, reasons, produces, and learns in a continuous loop.
+A guide to building a personal agentic operating system that captures, recalls, reasons, produces, and learns in a continuous loop. Written for both humans and AI agents: use it as a reference to design your system, and hand it to your agent as a blueprint for fleshing out the details and operating within it as you build it out together.
 
 ## What Is This?
 
-Most people's experience with AI agents is open-loop. You prompt, you get a response, and it's gone. Next session, you start over because the agent doesn't remember what you researched last week, what decisions were made, or what you already know.
+The way most people use AI agents is open-loop. You prompt, get a response, and move on. Next session you start over because nothing carries forward.
 
 This guide describes a different pattern. Instead of treating each session as a one-off, you build a system where every output feeds back into memory. Research gets filed into a wiki, decisions get logged alongside their rationale, and deliverables get pressure-tested so the results can inform the next pass. Over time, the system gets smarter because it's building on everything that came before, and that's what makes the loop "closed."
 
@@ -38,7 +38,7 @@ Every agentic OS needs these five capabilities, regardless of tooling:
 | **Output Engine** | The Hands | Branded documents, slide decks, reports, messages (not just text responses) |
 | **Self-Maintenance** | The Nervous System | Scheduled health checks, index refreshes, staleness alerts |
 
-All five are powered by a foundation model (Claude, GPT, Gemini, etc.) that provides reasoning and generation. The model is the engine. The pillars are the vehicle.
+All five are powered by a foundation model (Claude, GPT, Gemini, etc.) that provides reasoning and generation. The model is the engine, and the pillars are the vehicle.
 
 ## The Closed Loop
 
@@ -52,12 +52,12 @@ All five are powered by a foundation model (Claude, GPT, Gemini, etc.) that prov
 └─────────────────────────────────────────────────────────┘
 ```
 
-- **Capture**: Meeting notes, transcripts, documents, and web research flow in
-- **Store**: Content gets chunked, embedded, and indexed into semantic memory (RAG)
-- **Recall**: A query fans out across memory tiers to surface relevant context
+- **Capture**: Meeting notes, transcripts, documents, and web research flow into the system
+- **Store**: Your agent chunks, embeds, and indexes content into semantic memory (RAG)
+- **Recall**: When you ask a question, the system fans out across memory tiers to surface relevant context
 - **Reason**: Conductor pipelines stage the analysis (intelligence, assessment, sizing, recommendation)
 - **Produce**: The output engine generates stakeholder-ready deliverables
-- **Feedback**: Deliverables and decisions feed back into memory. Pressure-test results inform the next pass.
+- **Feedback**: Deliverables and decisions feed back into memory, and pressure-test results inform the next pass
 
 ## Memory Architecture (Five Tiers)
 
@@ -101,11 +101,9 @@ The wiki is where raw information becomes reusable knowledge. Every engagement g
 
 The wiki is what makes the loop "closed." Without it, every session starts from scratch. With it, each session builds on the last.
 
-This wiki pattern is inspired by Andrej Karpathy's [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) concept.
-
 ## Engagement Tiers
 
-Not everything needs the full stack.
+Not everything needs the full stack, and most days you're at Tier 1. The system scales when you need it.
 
 | Tier | Input | What Fires | Output |
 |------|-------|------------|--------|
@@ -114,7 +112,7 @@ Not everything needs the full stack.
 | **Standard** | "Build a strategy for Y" | All five pillars | Branded deck or document |
 | **Investment-Grade** | "Build a business case" | All five pillars + multiple pipeline stages | Full deliverable package with financial model |
 
-Start simple. Most days are Tier 1. The system scales when you need it. For a ready-to-use pipeline that implements the Standard and Investment-Grade tiers, see the [AI Strategic Analysis](https://github.com/s8ndyleung/ai-strategic-analysis) framework.
+For a ready-to-use pipeline that implements the Standard and Investment-Grade tiers, see the [AI Strategic Analysis](https://github.com/s8ndyleung/ai-strategic-analysis) framework.
 
 ## Design Principles
 
